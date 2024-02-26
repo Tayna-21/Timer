@@ -1,0 +1,57 @@
+@import './reset.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 5vw;
+  gap: 50px;
+
+    .timer {
+      font-size: calc(35px + 35 * (100vw / 1280));
+      line-height: 1.5em;
+      letter-spacing: .1em;
+      color: #334155;
+    }
+
+    p {
+      font-size: calc(16px + 14 * (100vw /1280));
+      line-height: 1.5em;
+      color: #334155;
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      padding: 50px;
+      border-top: 2px solid #cbd5e1;
+
+        button {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          width: calc(100px + 150 * (100vw / 1280));
+          color: white;
+          font-size: 16px;
+          text-transform: capitalize;
+          padding: 15px 7px;
+          border-radius: 3px;
+          border: none;
+          margin: 0 auto;
+
+          &:hover {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+            font-weight: bold;
+            transition: .1s ease-in;
+            will-change: transform;
+            cursor: pointer;
+          }
+        }
+    }
+}
